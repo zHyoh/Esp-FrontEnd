@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Tía Paola</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#f4f4f4;
+        }
+
+        h1{
+            text-align:center;
+            background-color:white;
+            padding:20px;
+            margin:0;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        ul{
+            list-style:none;
+            padding:30px;
+            margin:0;
+            display:grid; /*Bendito sea grid que acomoda el alto por fila TuT*/
+            grid-template-columns: repeat(3, 1fr); /* 3 platos por fila */
+            gap:20px;
+        }
+
+        li{
+            background-color:white;
+            padding:20px;
+            border-radius:8px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.08);
+            transition:0.2s;
+        }
+
+        li:hover{
+            transform:translateY(-5px);
+            box-shadow:0 5px 12px rgba(0,0,0,0.15);
+        }
+
+        h3{
+            margin-top:0;
+        }
+
+        p{
+            color:#555;
+            font-size:14px;
+            line-height:1.5;
+        }
+
+        span{
+            font-weight:bold;
+            color:#2e7d32;
+            display:block;
+            margin-top:10px;
+        }
+
+        button{
+            margin-top:10px;
+            padding:8px 15px;
+            border:none;
+            background-color:#2e7d32;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color:#1b5e20;
+        }
+        @media (max-width: 768px){
+            ul{
+                grid-template-columns: repeat(2, 1fr); /* 2 por fila en celular */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Restaurant Tía Paola</h1>
+
+<ul>
+
+    <li>
+        <h3>Lomo Saltado</h3>
+        <p>Tradicional plato peruano preparado con trozos de carne salteados al wok,
+        acompañados de cebolla, tomate, papas fritas crujientes y arroz blanco recién hecho.
+        Sabor intenso y casero.</p>
+        <span>S/. 20</span>
+        <button>Ordenar</button>
+    </li>
+
+    <li>
+        <h3>Ají de Gallina</h3>
+        <p>Pollo deshilachado en cremosa salsa de ají amarillo,
+        leche y queso, servido con arroz blanco, papa sancochada
+        y huevo duro.</p>
+        <span>S/. 18</span>
+        <button>Ordenar</button>
+    </li>
+
+    <li>
+        <h3>Arroz con Pollo</h3>
+        <p>Arroz verde cocido con culantro fresco,
+        acompañado de una presa de pollo jugosa,
+        ensalada fresca y salsa criolla.</p>
+        <span>S/. 17</span>
+        <button>Ordenar</button>
+    </li>
+
+    <li>
+        <h3>Tallarines Verdes</h3>
+        <p>Pasta bañada en salsa de albahaca,
+        espinaca y queso, acompañada de bistec
+        a la plancha o milanesa.</p>
+        <span>S/. 19</span>
+        <button>Ordenar</button>
+    </li>
+
+    <li>
+        <h3>Seco de Res</h3>
+        <p>Carne cocida lentamente en salsa de culantro,
+        acompañada de frejoles, arroz blanco y yuca.
+        Plato contundente y lleno de sabor.</p>
+        <span>S/. 21</span>
+        <button>Ordenar</button>
+    </li>
+
+    <li>
+        <h3>Chaufa de Pollo</h3>
+        <p>Arroz salteado al estilo oriental con pollo,
+        verduras frescas, sillao y tortilla de huevo,
+        preparado al momento.</p>
+        <span>S/. 18</span>
+        <button>Ordenar</button>
+    </li>
+
+    <li>
+        <h3>Papa a la Huancaína</h3>
+        <p>Rodajas de papa sancochada cubiertas con
+        cremosa salsa de ají amarillo y queso fresco,
+        decorado con huevo y aceituna.</p>
+        <span>S/. 12</span>
+        <button>Ordenar</button>
+    </li>
+
+    <li>
+        <h3>Caldo de Gallina</h3>
+        <p>Reconfortante sopa tradicional con gallina,
+        papa amarilla, huevo, fideos y hierbas naturales.
+        Ideal para cualquier momento del día.</p>
+        <span>S/. 15</span>
+        <button>Ordenar</button>
+    </li>
+
+    <li>
+        <h3>Leche Asada</h3>
+        <p>Postre casero horneado lentamente,
+        preparado con leche, huevo y caramelo,
+        textura suave y sabor dulce tradicional.</p>
+        <span>S/. 8</span>
+        <button>Ordenar</button>
+    </li>
+
+</ul>
+
+</body>
+</html>
