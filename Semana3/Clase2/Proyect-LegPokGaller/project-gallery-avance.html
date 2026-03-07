@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Gallery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&display=swap');
+
+        body {
+            margin: 0;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            background-color: #120B1A;
+        }
+
+        .main-bg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://upload-os-bbs.hoyolab.com/upload/2021/08/26/5481824/aa0b45e10b9965ec6b7a2c732af53024_8748354073441588777.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70');
+            background-size: cover;
+            background-position: center;
+            min-height: 75vh;
+        }
+
+        .main-slider {
+            background-color: #01050880;
+            max-width: 525px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        h3 {
+            font-size: 13px;
+            background-color: #8C25F444;
+            color: #8C25F4;
+            padding: 4px 8px;
+            width: fit-content;
+            margin: 0 auto;
+            margin: 25px auto -25px auto;
+            border-radius: 32px;
+        }
+
+        h1>span {
+            color: #7c3bed;
+        }
+
+        p {
+            font-size: 16px;
+            color: #cdcdcd;
+        }
+
+        a {
+            background-color: #7c3bed;
+            color: white;
+            border-radius: 32px;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 16px 32px;
+            display: inline-block;
+            margin: 0 0 32px 0;
+        }
+
+        /* tarjetas*/
+        .tarjeta {
+            max-width: 300px !important;
+            background-color: #8C25F40D;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: 16px;
+            width: 300px;
+            min-height: 420px;
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            border-radius: 16px 16px 0 0;
+        }
+
+        .tarjeta div {
+            padding: 16px 12px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .tarjeta div h3:last-child {
+            margin-top: auto;
+        }
+
+        .tarjeta h3 {
+            font-size: 12px;
+            color: #7c3bed;
+            margin: 0;
+            text-align: left;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+        }
+
+        .galeria h2,
+        .galeria p {
+            width: 100%;
+            text-align: left;
+            padding-left: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article class="main-bg">
+            <div class="main-slider">
+                <h3>PERSONAJE DESTACADO: SHOGUN RAIDEN</h3>
+                <h1>Waifus de <br><span> Videojuegos</span></h1>
+                <p>
+                    Explora algunos de los personajes femeninos más icónicos, poderosos
+                    y memorables del mundo gaming en nuestra galería curada.
+                </p>
+                <a href="#">
+                    Explorar Galería
+                </a>
+            </div>
+        </article>
+        <div class="galeria">
+            <h2>Galería de Waifus</h2>
+            <p>Una colección de los rostros más reconocidos de la industria.</p>
+            <article class="tarjeta">
+                <img src="https://assetsio.gnwcdn.com/Genshin-Impact-Raiden-Shogun-materials%2C-kit%2C-and-Constellations-cover.jpg"
+                    alt="">
+                <div>
+                    <h3>GENSHIN IMPACT</h3>
+                    <h2>Raiden Shogun</h2>
+                    <p>Gobernante de Inazuma con un poder eléctrico absoluto.</p>
+                    <br>
+                    <h3>Electro Archon</h3>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_85.jpg" alt="">
+                <div>
+                    <h3>LEAGUE OF LEGENDS</h3>
+                    <h2>Ahri</h2>
+                    <p>Una vastaya de nueve colas que manipula la esencia de sus enemigos.</p>
+                    <br>
+                    <h3>Mid Lane Mage</h3>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="https://fotografias-neox.atresmedia.com/clipping/cmsimages01/2017/05/09/D07517D2-B5F9-4BE8-8D07-F481DB89140B/98.jpg?crop=1920,1080,x0,y0&width=1900&height=1069&optimize=high&format=webply"
+                    alt="">
+                <div>
+                    <h3>OVERWATCH</h3>
+                    <h2>D.Va</h2>
+                    <p>Exjugadora profesional convertida en piloto de mecha.</p>
+                    <br>
+                    <h3>Tank Hero</h3>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2024/9/20/hkm243bv8cpdwkxhzwmp/jinx-league-of-legends-arcane"
+                    alt="">
+                <div>
+                    <h3>LEAGUE OF LEGENDS</h3>
+                    <h2>Jinx</h2>
+                    <p>Una criminal caótica con amor por el caos y las explosiones.</p>
+                    <br>
+                    <h3>ADC Marksman</h3>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="https://aish.com/wp-content/uploads/2022/02/princess-zelda-and-queen-esther-how-the-legend-of-zelda-helped-me-understand-purim-730_x_411.jpg"
+                    alt="">
+                <div>
+                    <h3>THE LEGEND OF ZELDA</h3>
+                    <h2>Princess Zelda</h2>
+                    <p>La sabia princesa de Hyrule con poderes sagrados.</p>
+                    <br>
+                    <h3>Hylian Royalty</h3>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/final-fantasy-vii-remake/9/94/Final-Fantasy-VII-Remake-Tifa.jpg"
+                    alt="">
+                <div>
+                    <h3>FINAL FANTASY VII</h3>
+                    <h2>Tifa Lockhart</h2>
+                    <p>Una luchadora experta con gran corazón y fuerza increíble.</p>
+                    <br>
+                    <h3>Martial Artist</h3>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="https://i0.wp.com/levelup.buscafs.com/2025/12/Tomb-Raider-remake.jpg?fit=1085,599&quality=75&strip=all"
+                    alt="">
+                <div>
+                    <h3>TOMB RAIDER</h3>
+                    <h2>Lara Croft</h2>
+                    <p>Arqueóloga aventurera famosa por explorar ruinas antiguas.</p>
+                    <br>
+                    <h3>Treasure Hunter</h3>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2022/10/Overwatch-2-Mercy-Hero-Model.jpg"
+                    alt="">
+                <div>
+                    <h3>OVERWATCH</h3>
+                    <h2>Mercy</h2>
+                    <p>Médica brillante que utiliza tecnología para salvar vidas.</p>
+                    <br>
+                    <h3>Support Hero</h3>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2022/02/Genshin-Impact-adds-playable-Yae-Miko.png?w=1200&h=675&fit=crop"
+                    alt="">
+                <div>
+                    <h3>GENSHIN IMPACT</h3>
+                    <h2>Yae Miko</h2>
+                    <p>Sacerdotisa del Gran Santuario Narukami y astuta kitsune.</p>
+                    <br>
+                    <h3>Electro Catalyst</h3>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="https://i.ytimg.com/vi/8IyJ4EvXcjg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDA0lTsK-5AFYSEWVrRxDQQmMMynw"
+                    alt="">
+                <div>
+                    <h3>NIER AUTOMATA</h3>
+                    <h2>2B</h2>
+                    <p>Androide de combate diseñada para luchar contra máquinas.</p>
+                    <br>
+                    <h3>YoRHa Soldier</h3>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2024/02/Street-Fighter-Inteligencia-Artificial-imagina-a-Chun-Li-como-una-hermosa-fisicoculturista.jpg"
+                    alt="">
+                <div>
+                    <h3>STREET FIGHTER</h3>
+                    <h2>Chun-Li</h2>
+                    <p>Agente de Interpol famosa por sus poderosas patadas.</p>
+                    <br>
+                    <h3>Kung Fu Master</h3>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="https://www.esportmaniacos.com/wp-content/uploads/2021/02/Katarina_12.jpg" alt="">
+                <div>
+                    <h3>LEAGUE OF LEGENDS</h3>
+                    <h2>Katarina</h2>
+                    <p>Asesina letal de Noxus experta en dagas giratorias.</p>
+                    <br>
+                    <h3>Assassin</h3>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>
