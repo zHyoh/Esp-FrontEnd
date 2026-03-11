@@ -2,7 +2,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100dvh;
+    min-height: 100vh;
     background-image: url('https://i.postimg.cc/Gp3ysBfq/react-system.webp');
     background-size: cover;
     background-position: center;
@@ -70,10 +70,20 @@ body {
     color: #000;
     font-size: 12px;
     font-weight: bold;
+    transition: box-shadow 0.3s, filter 0.3s;
+
+    &:hover{
+    box-shadow:0 0.125rem 0.24rem 0 #23b5eb;
+    filter:brightness(1.25);
+    }
 }
 
 .social-link {
     color: #fefefe;
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.3s;
+    &:hover{
+        color:#23b5eb;
+    }
 }
