@@ -26,7 +26,7 @@
 
         .main-slider {
             background-color: #01050880;
-            max-width: 525px;
+            max-width: 500px;
             text-align: center;
             color: white;
         }
@@ -72,13 +72,12 @@
 
         /* tarjetas*/
         .tarjeta {
-            max-width: 300px !important;
+            max-width: 300px;
             background-color: #8C25F40D;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             border-radius: 16px;
-            width: 300px;
             min-height: 420px;
         }
 
@@ -91,7 +90,7 @@
         }
 
         .tarjeta div {
-            padding: 16px 12px;
+            padding: 16px 10px;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
@@ -114,7 +113,37 @@
             gap: 24px;
             justify-content: center;
         }
+.titulo-galeria{
+    width:100%;
+    text-align:center;
+    margin:40px 0 16px 0;
+}
 
+.titulo-galeria h3{
+    font-size:13px;
+    background-color:#8C25F444;
+    color:#8C25F4;
+    padding:4px 10px;
+    border-radius:32px;
+    width:fit-content;
+    margin:0 auto 12px auto;
+}
+
+.titulo-galeria h2{
+    font-size:32px;
+    color:white;
+    margin:0;
+}
+
+.titulo-galeria h2 span{
+    color:#7c3bed;
+}
+
+.titulo-galeria p{
+    font-size:16px;
+    color:#cdcdcd;
+    margin-top:8px;
+}
         .galeria h2,
         .galeria p {
             width: 100%;
@@ -140,8 +169,10 @@
             </div>
         </article>
         <div class="galeria">
-            <h2>Galería de Waifus</h2>
-            <p>Una colección de los rostros más reconocidos de la industria.</p>
+<div class="titulo-galeria">
+    <h2>Galería de <span>Waifus</span></h2>
+    <p>Una colección de los rostros más reconocidos de la industria.</p>
+</div>
             <article class="tarjeta">
                 <img src="https://assetsio.gnwcdn.com/Genshin-Impact-Raiden-Shogun-materials%2C-kit%2C-and-Constellations-cover.jpg"
                     alt="">
