@@ -1,0 +1,63 @@
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100dvh;
+        background-image: url('https://i.postimg.cc/Gp3ysBfq/react-system.webp');
+        background-size: cover;
+        background-position: center;
+        color: #fefefe;
+        font-family: monospace;
+    }
+
+    article {
+        max-width: 320px;
+        padding: 16px;
+        border-radius: 16px;
+        box-shadow: 0 2px 4px 0 #fefefe80;
+        background-color: #01050880;
+        backdrop-filter: blur(8px);
+        text-align: center;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+        color: #bbb;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .badge {
+        background-color: rgb(0, 126, 175);
+        padding: 4px;
+        border-radius: 8px;
+        color: #000;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    a {
+        color: #fefefe;
+        font-weight: bold;
+        text-decoration: none;
+    }
