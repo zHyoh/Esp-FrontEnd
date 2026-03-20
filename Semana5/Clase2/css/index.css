@@ -8,11 +8,13 @@
 .header {
     padding-block: 2rem;
 }
+
 .section {
     padding-block: 1rem;
 }
+
 .container {
-    max-width: 1280px;
+    max-width: 1024px;
     margin-inline: auto;
     padding-inline: 1rem;
 }
@@ -27,32 +29,28 @@
     height: 8rem;
     border-radius: 1rem;
 }
-.link{
+
+.link {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
     transition: filter 0.3s;
-    &hover{
+
+    &:hover {
         filter: brightness(1.25);
     }
 }
-.interactive{
-    font-size: 0.875rem;
-    margin:0;
-}
-.interactive--xl{
-    font-size: 1.125rem;
-    font-weight: 700;
 
-}
 .title {
     margin: 0;
     font-size: 2rem;
     font-weight: 800;
 }
-.title--xs{
-    font-size:1.5rem;
+
+.title--xs {
+    font-size: 1.5rem;
     font-weight: 700;
 }
+
 .subtitle {
     margin: 0;
     font-size: 1.5rem;
@@ -64,11 +62,20 @@
     font-weight: 600;
 }
 
+.subtitle--2xs {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.subtitle--3xs {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 .text {
     margin: 0;
     font-size: 1rem;
     font-weight: 400;
-    letter-spacing: 0.15rem;
     line-height: 1.5;
 }
 
@@ -88,6 +95,10 @@
     align-items: center;
 }
 
+.j-content-between {
+    justify-content: space-between;
+}
+
 .gap-2 {
     gap: 0.5rem;
 }
@@ -100,11 +111,12 @@
     text-align: center;
 }
 
-.c-ash700 {
-    color: #555555;
-}
 .c-ash600 {
     color: #696969;
+}
+
+.c-ash700 {
+    color: #555555;
 }
 
 .c-ash800 {
