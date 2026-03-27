@@ -1,18 +1,79 @@
 /*variables*/
-:root{
-    --black-color:#010508;
-    --white-color:#fefefe;
+:root {
+    --primary-color: #23b5e8;
+    --black-color: #010508;
+    --white-color: #fefefe;
+    --size: 0.25rem;
+    --transition-duration: 0.3s;
 
 }
 
 /*global*/
-.body{
-    margin:0;
+.body {
+    margin: 0;
     background-color: var(--black-color);
-    color:var(--white-color)
+    color: var(--white-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*
+layout*/
+.container {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 1rem;
 }
 
 /*compoinentes*/
-.header{
+.header {
+    background-color: #01050880;
+}
+
+.nav {
     padding-block: 1rem;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*elements*/
+.link {
+    text-decoration: none;
+    color: inherit;
+    transition: all var(--transition-duration);
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.interactive {
+    margin: 0;
+    font-size: calc(var(--size) * 3.5);
+    font-weight: 600;
+}
+
+/*utils*/
+.d-flex {
+    display: flex;
+}
+
+.a-items-center {
+    align-items: center;
+}
+
+.j-content-s-between {
+    justify-content: space-between;
+}
+
+.g-2 {
+    gap: calc(var(--size)*2);
+}
+@media(width>=768px){
+.md\:f-direction-row{
+    
+}
 }
