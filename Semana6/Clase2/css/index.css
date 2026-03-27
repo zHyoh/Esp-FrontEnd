@@ -1,32 +1,42 @@
-/*variables*/
+/* variables */
 :root {
-    --primary-color: #23b5e8;
+    --primary-color: #23b5E8;
     --black-color: #010508;
     --white-color: #fefefe;
     --size: 0.25rem;
     --transition-duration: 0.3s;
-
 }
 
-/*global*/
+/* globals */
 .body {
     margin: 0;
     background-color: var(--black-color);
     color: var(--white-color);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/*
-layout*/
+/* layout */
 .container {
     max-width: 1280px;
-    margin-inline: auto;
     padding-inline: 1rem;
+    margin-inline: auto;
 }
-
-/*compoinentes*/
+.g-layout{
+    display:grid;
+}
+.g-layout--auto-fit-columns{
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+}
+/* components */
 .header {
     background-color: #01050880;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.section{
+    padding-block: 2rem ;
 }
 
 .nav {
@@ -38,12 +48,36 @@ layout*/
     margin: 0;
     list-style: none;
 }
+.card{
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.hero {
+    position: relative;
+    min-height: 100dvh;
+}
 
-/*elements*/
+/* elements */
+.image {
+    display: block;
+    object-fit: cover;
+}
+
+.image--background {
+    position: absolute;
+    inset:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.image--card{
+    width:100%;
+    height: 360px;
+}
 .link {
     text-decoration: none;
     color: inherit;
-    transition: all var(--transition-duration);
+    transition: color var(--transition-duration);
 
     &:hover {
         color: var(--primary-color);
@@ -56,9 +90,13 @@ layout*/
     font-weight: 600;
 }
 
-/*utils*/
+/* utils */
 .d-flex {
     display: flex;
+}
+
+.f-direction-column {
+    flex-direction: column;
 }
 
 .a-items-center {
@@ -70,10 +108,13 @@ layout*/
 }
 
 .g-2 {
-    gap: calc(var(--size)*2);
+    gap: calc(var(--size) * 2);
 }
-@media(width>=768px){
-.md\:f-direction-row{
-    
+.g-4 {
+    gap: calc(var(--size) * 4);
 }
+@media (width >=768px) {
+    .md\:f-direction-row {
+        flex-direction: row;
+    }
 }
